@@ -16,7 +16,7 @@ const ProductModel = new mongoose.model("Products",new mongoose.Schema({
 
 const DB_CONNECTION = process.env.DB_CONNECTION
 const DB_PASSWORD = process.env.DB_PASSWORD
-mongoose.connect(DB_CONNECTION.replace("<password>",DB_PASSWORD))
+mongoose.connect("mongodb+srv://elnur_admin:Admin123@spotify.wmxixvo.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>{
     console.log('MongoDB connected successfully!');
 })
